@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #742f68, #ad2937);
+}
+
+.mainDiv {
+    width: 100%; 
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentScoreDiv {
+    background-color: #bf2e57;
+    border: none !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 0.3rem 0rem !important;
+}
+.currentScoreDiv:hover {
+    background: linear-gradient(to left, #742f68, #ad2937);
+}
+
+#totalScore {
+    color: #bf2e57 !important;
+    font-size: 3.5rem;
+}
+
+.player1,
+.player2 {
+    width: 50% !important; 
+    background-color: #e797aa;
+    border: none;
+    border-radius: 12px;
+    padding: 5rem 2rem !important
+}
+.player2 {
+    background-color: #c787a7;
+}
+
+.buttons {
+    background-color: #f4eef0;
+    border: none;
+    border-radius: 10rem;
+
+}
