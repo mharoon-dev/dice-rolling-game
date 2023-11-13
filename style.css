@@ -35,7 +35,7 @@ body {
     background: linear-gradient(to left, #742f68, #ad2937);
 }
 
-#totalScore {
+#totalScore1,#totalScore2 {
     color: #bf2e57 !important;
     font-size: 3.5rem;
 }
@@ -59,7 +59,6 @@ body {
     background-color: #f4eef0;
     border: none;
     border-radius: 10rem;
-
 }
 
 .centerBtns {
@@ -76,8 +75,30 @@ body {
     justify-content: center !important;
     align-items: center;
 }
-.dice {
+.diceImage {
     border-radius: 10px;
+}
+
+/* modal styling */
+.myModal {
+    color: #bf2e57;
+    text-transform: capitalize;
+    background-color: white;
+    border-radius:15px;
+    position: absolute;
+    display: block;
+    padding: 5rem;
+}
+.myModal input {
+    height: 2rem;
+    width: 12rem;
+}
+.myModal h1 {
+    padding: 5rem;
+}
+
+.myModal img {
+    padding: 0.5rem 0.5rem 0rem 0rem;
 }
 
 
@@ -87,12 +108,15 @@ body {
     }
     .currentScoreDiv {
     padding: 0rem 1rem !important;
-    }
-    .dice {
-        width: 55px;
-    }
-    .centerBtns button {
+}
+.diceImage {
+    width: 55px;
+}
+.centerBtns button {
         padding: 0.40rem;
+    }
+    .myModal h1 {
+        padding: 2.5rem;
     }
     
 }
