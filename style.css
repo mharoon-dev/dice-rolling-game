@@ -28,7 +28,8 @@ body {
     border: none !important;
     border-radius: 8px !important;
     color: white !important;
-    padding: 0.3rem 0rem !important;
+    padding: 0.3rem 3rem !important;
+    width: fit-content;
 }
 .currentScoreDiv:hover {
     background: linear-gradient(to left, #742f68, #ad2937);
@@ -44,11 +45,14 @@ body {
     width: 50% !important; 
     background-color: #e797aa;
     border: none;
-    border-radius: 12px;
     padding: 5rem 2rem !important
+}
+.player1 {
+    border-radius: 12px 0px 0px 12px !important;
 }
 .player2 {
     background-color: #c787a7;
+    border-radius: 0px 12px 12px 0px !important;
 }
 
 .buttons {
@@ -56,4 +60,39 @@ body {
     border: none;
     border-radius: 10rem;
 
+}
+
+.centerBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+}
+.centerBtns button {
+    padding: 0.60rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+.dice {
+    border-radius: 10px;
+}
+
+
+@media (max-width:400px) {
+    .mainDiv {
+        padding: 1rem !important;
+    }
+    .currentScoreDiv {
+    padding: 0rem 1rem !important;
+    }
+    .dice {
+        width: 55px;
+    }
+    .centerBtns button {
+        padding: 0.40rem;
+    }
+    
 }
