@@ -8,6 +8,16 @@ let totalScorePlayer1 = document.querySelector('#totalScore1');
 let currentScorePlayer2 = document.querySelector('#currentScore2');
 let totalScorePlayer2 = document.querySelector('#totalScore2');
 
+
+
+// how to play modal 
+function okHandler() {
+    let myModal2 = document.querySelector('.myModal2')
+    myModal2.style.display = "none" 
+}
+
+
+// players name modal
 let player1NameInput = document.querySelector('#player1NameInput');
 let player2NameInput = document.querySelector('#player2NameInput');
 let SubmitBtn = document.querySelector('#SubmitBtn');
@@ -25,8 +35,7 @@ function SubmitHandler() {
 }
 
 
-
-
+// rolling dice button
 let diceImage = document.querySelector('.diceImage');
 let DiceRoll = document.querySelector('#DiceRoll');
 DiceRoll.addEventListener("click" , () => {
@@ -58,7 +67,7 @@ DiceRoll.addEventListener("click" , () => {
 })
 
 
-
+// hold button
 let hold = document.querySelector('#hold');
 hold.addEventListener("click", () => {
     if (totalScorePlayer1.textContent < 100 && totalScorePlayer2.textContent < 100) {
@@ -88,21 +97,23 @@ hold.addEventListener("click", () => {
                 </div>
                 <h1>${player1NameInput.value} won the game</h1>`;
             }
-    myModal.style.display = 'block';
+            myModal.style.display = 'block';
     
-} else {
-    console.log("game is going on");
-}
-}
+        } else {
+            console.log("game is going on");
+        }
+    }
 });
 
 
+// new game button
 let newGame = document.querySelector('#newGame');
-
 newGame.addEventListener("click", () => {
     location.reload()
 })
 
+
+// win the game modal button 
 let myModal = document.querySelector('.myModal');
 let crossBtn = document.querySelector('#crossBtn');
 let buttons = document.querySelector('.centerBtns');

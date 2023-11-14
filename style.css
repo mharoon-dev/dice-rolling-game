@@ -12,6 +12,8 @@ body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right, #742f68, #ad2937);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainDiv {
@@ -80,7 +82,7 @@ body {
 }
 
 /* modal styling */
-.myModal {
+.myModal,.myModal2 {
     color: #bf2e57;
     text-transform: capitalize;
     background-color: white;
