@@ -47,7 +47,7 @@ DiceRoll.addEventListener("click" , () => {
         diceImage.src = `./assets/${randomNumber}.jpg`
         
         if (randomNumber == 1) {
-            alert(`turn change`);
+            alert(`It's 1 turn change`);
             if (player1Turn) {
                 player1Turn = false;
             } else {
